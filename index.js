@@ -6,8 +6,9 @@ const PORT = process.env.PORT || 4000;
 const log = console.log;
 
 app.get('/video/:name',(req,res)=>{
+  const name = req.params.name;
   //get file stat
-  const path = `./videos/Travaho/Travaho.webm`;
+  const path = `./videos/${name}/${name}.webm`;
   const stat = fs.statSync(path)
   const file_size = stat.size
   const range = req.headers.range
