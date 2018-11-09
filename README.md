@@ -11,7 +11,10 @@ How to run the app
        yarn  add / npm install
 
 3.make a directories in the project directory
+
 4.Download videos in the directory
+
 5.Alter index.js path variables according to your files in videos directory
+
 6. Run the app
           node index.js
